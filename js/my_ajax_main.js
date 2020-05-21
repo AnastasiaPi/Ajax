@@ -24,10 +24,10 @@ $.ajax({
       url:"https://raw.githack.com/AnastasiaPi/Ajax/master/index.html",
       data:"html",
       success:function(response){
-          alert("удача")
+          alert("All it`s good")
       },
       error: function(response){
-          alert("помилка")
+          alert("Someting wrong")
       }
   });
  });
