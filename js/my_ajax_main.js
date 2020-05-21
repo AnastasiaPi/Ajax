@@ -12,7 +12,7 @@ $.ajax({
     dataType: "json",
     data: {name:name,gender:gender,date:date},
     success: function(data) { //Данные отправлены успешно
-        // console.log(data.name)
+         console.log(data.name)
         $('#result_form').text(data);
     },
     error: function(data) { // Данные не отправлены
