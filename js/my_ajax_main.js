@@ -21,7 +21,7 @@ $.ajax({
   });
   $.ajax({
       type:"get",
-      url:"https://raw.githack.com/AnastasiaPi/Ajax/master/index.html,
+      url:"https://raw.githack.com/AnastasiaPi/Ajax/master/index.html",
       data:"html",
       success:function(response){
           alert("удача")
