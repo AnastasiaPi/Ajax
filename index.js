@@ -13,7 +13,7 @@ app.post("/user",function (request, response) {
     let user = request.body;
 
     if (request.headers["user-agent"] == "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/38.0.2220.41") {
-      if(user.name == "Male" || user.name == "Famale"){
+      if(user.gender == "Male" || user.gender == "Famale"){
         response.json([user.name,user.gender,user.date]);
       }
       else {
