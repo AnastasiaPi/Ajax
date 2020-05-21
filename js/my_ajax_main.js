@@ -7,7 +7,7 @@ $("#btn").click(function(event){
 
 
 $.ajax({
-    url: "https://raw.githack.com/AnastasiaPi/Ajax/master/index.html",
+    url: "/user",
     type:     "POST",
     dataType: "json",
     data: {name:name,gender:gender,date:date},
@@ -21,7 +21,7 @@ $.ajax({
   });
   $.ajax({
       type:"get",
-      url:"https://raw.githack.com/AnastasiaPi/Ajax/master/index.html",
+      url:"/user",
       data:"html",
       success:function(response){
           alert("All it`s good")
