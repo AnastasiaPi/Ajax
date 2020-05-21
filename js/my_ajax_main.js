@@ -7,7 +7,7 @@ $("#btn").click(function(event){
 
 
 $.ajax({
-    url:   "index.html",
+    url: "https://raw.githack.com/AnastasiaPi/Ajax/master/index.html",
     type:     "POST",
     dataType: "json",
     data: {name:name,gender:gender,date:date},
@@ -18,5 +18,16 @@ $.ajax({
     error: function(data) { // Данные не отправлены
         $('#result_form').text('Error data is not sent');
     }
+  });
+  $.ajax({
+      type:"get",
+      url:"https://raw.githack.com/AnastasiaPi/Ajax/master/index.html,
+      data:"html",
+      success:function(response){
+          alert("удача")
+      },
+      error: function(response){
+          alert("помилка")
+      }
   });
  });
